@@ -9,7 +9,7 @@
   <script src="js/jquery-2.1.3.min.js"></script>
 </head>
 <body>
-  <div style="text-align: center; color:gray; pointer-events: none;">再読み込みしても更新されない場合は強制再読み込みを試してください(例 Google Chrome: Ctrl+F5)<br>再開中につきリンク壊れてます…待ってて</div>
+  <div style="text-align: center; color:gray; pointer-events: none;">再読み込みしても更新されない場合は強制再読み込みを試してください(例 Google Chrome: Ctrl+F5)</div>
   <div class="search-area">
     <script src="js/search.js" type="text/javascript"></script>
     <form method="get" action="">
@@ -18,7 +18,7 @@
   </div>
   <script src="js/tablesorter.js"></script>
   <script src="js/sort.js"></script>
-  <script src="js/genres.js"></script>
+  <!--<script src="js/genres.js"></script>-->
   <script src="js/fav.js"></script>
   <script src="js/modal.js"></script>
   <!--<script src="js/unlucky.js"></script>-->
@@ -35,26 +35,9 @@
       <col style='width:39%;'>
     </colgroup>
     <tbody>
-      <tr><td class="fav" id="pl_a1">★</td><td class="link"><a href="https://youtube.com/playlist?list=PLTeTb5hWDth35ncWutzt9UapM-BySEzoV">Link</a></td><td class="cls_otoge"></td><td><span class="srch_trg">kamome sano</span></td><td class="bpm">~190</td><td><span class="srch_trg">かわいい</span></td></tr>
-      <tr><td class="fav" id="pl_a2">★</td><td class="link"><a href="https://youtube.com/playlist?list=PLTeTb5hWDth2IFdZxyWrxUAowH64OhbqI">Link</a></td><td class="cls_otoge"></td><td><span class="srch_trg">かねこちはる</span></td><td class="bpm">~220</td><td><span class="srch_trg">ピアノ</span>，<span class="srch_trg">きれい</span></td></tr>
-      <tr><td class="fav" id="pl_a3">★</td><td class="link"><a href="https://youtube.com/playlist?list=PLTeTb5hWDth0wmOGjhyhnEATcf--atZHr">Link</a></td><td class="cls_otoge"></td><td><span class="srch_trg">Feryquitous</span></td><td class="bpm">~170</td><td><span class="srch_trg">ピアノ</span></td></tr>
-      <tr><td class="fav" id="pl_a4">★</td><td class="link"><a href="https://youtube.com/playlist?list=PLTeTb5hWDth0ZabyEvXV1dfju_qFSV6sa">Link</a></td><td class="cls_otoge"></td><td><span class="srch_trg">t+pazolite</span></td><td class="bpm">~220</td><td><span class="tooltip"><span class="srch_trg">ハードコア</span><span class="description hard_core"></span></span>，<span class="srch_trg">声ネタ</span>，<span class="srch_trg">たのしい</span></td></tr>
-      <tr><td class="fav" id="pl_a5">★</td><td class="link"><a href="https://youtube.com/playlist?list=PLTeTb5hWDth0QIBP3d5QgNUZQutFjPJrX">Link</a></td><td class="cls_otoge"></td><td><span class="srch_trg">モリモリあつし</span></td><td class="bpm">~220</td><td><span class="tooltip"><span class="srch_trg">ハードルネッサンス</span><span class="description hard_renaissance"></span></span></td></tr>
-      <tr><td class="fav" id="pl_a6">★</td><td class="link"><a href="https://youtube.com/playlist?list=PLTeTb5hWDth06kE_5meVvESjtWSfSVpP-">Link</a></td><td class="cls_otoge"></td><td><span class="srch_trg">黒魔</span></td><td class="bpm">~190</td><td><span class="tooltip"><span class="srch_trg">チップチューン</span><span class="description" id="chip_tune"></span></span></td></tr>
-      <tr><td class="fav" id="pl_a7">★</td><td class="link"><a href="https://youtube.com/playlist?list=PLTeTb5hWDth2tgushDiD5teTXrnfQEEqQ">Link</a></td><td class="cls_otoge"></td><td><span class="srch_trg">OSTER project</span></td><td class="bpm">~190</td><td><span class="tooltip"><span class="srch_trg">フュージョン</span><span class="description" id="fusion"></span></span>，<span class="srch_trg">ピアノ</span>，<span class="srch_trg">たのしい</span></td></tr>
-      <tr><td class="fav" id="pl_a8">★</td><td class="link"><a href="https://youtube.com/playlist?list=PLTeTb5hWDth0G7p-btCQnqboLVatUtpk1">Link</a></td><td class="cls_otoge"></td><td><span class="srch_trg">削除</span></td><td class="bpm">~170</td><td><span class="srch_trg">すごい</span></td></tr>
-      <tr><td class="fav" id="pl_a9">★</td><td class="link"><a href="https://youtube.com/playlist?list=PLTeTb5hWDth1LfTUpLZZ0G2cujRQ7fv9n">Link</a></td><td class="cls_otoge"></td><td><span class="srch_trg">Team Grimoire</span></td><td class="bpm">~180</td><td><span class="tooltip"><span class="srch_trg">ハードコア</span><span class="description hard_core"></span></span>，<span class="srch_trg">バロック</span></td></tr>
-      <tr><td class="fav" id="pl_a10">★</td><td class="link"><a href="https://youtube.com/playlist?list=PLTeTb5hWDth0YWh9qKcPC0E0ensWbTwg9">Link</a></td><td class="cls_otoge"></td><td><span class="srch_trg">かめりあ</span><span style="font-size:12px; color:gray">#1</span></td><td class="bpm">~190</td><td><span class="tooltip"><span class="srch_trg">ハードコア</span><span class="description hard_core"></span></span>，<span class="srch_trg">すごい</span></td></tr>
-      <tr><td class="fav" id="pl_a10_2">★</td><td class="link"><a href="https://youtube.com/playlist?list=PLTeTb5hWDth3EE_DViRK9bcD4IER5HiWL">Link</a></td><td class="cls_otoge"></td><td><span class="srch_trg">かめりあ</span><span style="font-size:12px; color:gray">#2(LONG)</span></td><td class="bpm">~200</td><td><span class="srch_trg">すごい</span></td></tr>
-      <tr><td class="fav" id="pl_a11">★</td><td class="link"><a href="https://youtube.com/playlist?list=PLTeTb5hWDth1_tvbLGHZNkQuvrbL4mB7r">Link</a></td><td class="cls_otoge"></td><td><span class="srch_trg">xi</span></td><td class="bpm">~200</td><td><span class="srch_trg">ピアノ</span></td></tr>
-      <tr><td class="fav" id="pl_a12">★</td><td class="link"><a href="https://youtube.com/playlist?list=PLTeTb5hWDth0MSAVTl3LwGusALoyFjbzu">Link</a></td><td class="cls_otoge"></td><td><span class="srch_trg">P*Light</span></td><td class="bpm">~190</td><td><span class="tooltip"><span class="srch_trg">ハッピーハードコア</span><span class="description" id="happy_core"></span></span>，<span class="srch_trg">声ネタ</span></td></tr>
-      <tr><td class="fav" id="pl_a13">★</td><td class="link"><a href="https://youtube.com/playlist?list=PLTeTb5hWDth1yLClfN4q36QlDvooyUAJ3">Link</a></td><td class="cls_otoge"></td><td><span class="srch_trg">M2U</span></td><td class="bpm">~150</td><td><span class="srch_trg">ピアノ</span>，<span class="srch_trg">ヴァイオリン</span></td></tr>
-      <tr><td class="fav" id="pl_a14">★</td><td class="link"><a href="https://youtube.com/playlist?list=PLTeTb5hWDth15ZHscR-QAnZNHbNca2Cpw">Link</a></td><td class="cls_otoge"></td><td><span class="srch_trg">BlackY</span></td><td class="bpm">~200</td><td><span class="tooltip"><span class="srch_trg">ハードルネッサンス</span><span class="description hard_renaissance"></span></span></td></tr>
-      <tr><td class="fav" id="pl_a15">★</td><td class="link"><a href="https://youtube.com/playlist?list=PLTeTb5hWDth2tXpVNhrv9giJPV-Avr290">Link</a></td><td class="cls_otoge"></td><td><span class="srch_trg">ぺのれり</span></td><td class="bpm">~170</td><td><span class="srch_trg">ピアノ</span>，<span class="srch_trg">きれい</span></td></tr>
-      <tr><td class="fav" id="pl_d1">★</td><td class="link"><a href="https://youtube.com/playlist?list=PLTeTb5hWDth3ud3hGWGoPlUfn4za8m9-6">Link</a></td><td class="cls_otoge"></td><td><span class="srch_trg">猫叉Master</span><span style="font-size:12px; color:gray">(Vocal有，LONG)</span></td><td class="bpm">~140</td><td><span class="srch_trg">落ち着く</span></td></tr>
-      <tr><td class="fav" id="pl_b1">★</td><td class="link"><a href="https://youtube.com/playlist?list=PLTeTb5hWDth33fMUuKJ9i1idzYYWXHKS8">Link</a></td><td class="cls_otoge"></td><td><span>---</span></td><td class="bpm">~180</td><td><span class="tooltip"><span class="srch_trg">フューチャーベース</span><span class="description" id="future_bass"></span></span></td></tr>
-      <tr><td class="fav" id="pl_b2">★</td><td class="link"><a href="https://youtube.com/playlist?list=PLTeTb5hWDth2QEkUH-fPwbwqZ8jEyZWMY">Link</a></td><td class="cls_otoge"></td><td><span>---</span></td><td class="bpm">~160</td><td><span class="tooltip"><span class="srch_trg">シュランツ</span><span class="description" id="schranz"></span></span></td></tr>
-      <tr class="ex"><td class="fav" id="pl_c1">★</td><td class="link"><a href="https://youtube.com/playlist?list=PLTeTb5hWDth3cXNlNQvIZtw41LTuNpHKu">Link</a></td><td class="cls_toho"><td><span class="srch_trg">FELT</span><span style="font-size:12px; color:gray">(Vocal:Vivienne)</span></td></td><td class="bpm">~150</td><td><span class="srch_trg">きれい</span></td></tr>
+      <!--<tr><td class="fav" id="pl_a1">★</td><td class="link"><a href="https://youtube.com/playlist?list=PLTeTb5hWDth35ncWutzt9UapM-BySEzoV">Link</a></td><td class="cls_otoge"></td><td><span class="srch_trg">kamome sano</span></td><td class="bpm">~190</td><td><span class="srch_trg">かわいい</span></td></tr>-->
+      <tr><td class="fav" id="kaneko">★</td><td class="link"><a href="https://youtube.com/playlist?list=PLKNbwgy074gYVfgydkInDQJzm4rLHtoCz">Link</a></td><td class="cls_otoge"></td><td><span class="srch_trg">かねこちはる</span></td><td class="bpm">~220</td><td><span class="srch_trg">ピアノ</span>，<span class="srch_trg">きれい</span></td></tr>
+      <!--<tr class="ex"><td class="fav" id="pl_c1">★</td><td class="link"><a href="https://youtube.com/playlist?list=PLTeTb5hWDth3cXNlNQvIZtw41LTuNpHKu">Link</a></td><td class="cls_toho"><td><span class="srch_trg">FELT</span><span style="font-size:12px; color:gray">(Vocal:Vivienne)</span></td></td><td class="bpm">~150</td><td><span class="srch_trg">きれい</span></td></tr>-->
       <!--<tr id="unlucky"><td colspan="6">ハズレ(<span id="press_count">1</span>回目)</td></tr>-->
     </tbody>
   </table>
