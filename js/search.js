@@ -7,11 +7,19 @@ return array;
 }
 
 $(function(){
+	$('#data').addClass('active');
+	setTimeout(function(){
+	$('#data').removeClass('active');}, 10);
 	var btn = $('.btn');
 	var state = 0;
+        var check = localStorage.getItem('check_st');
+	if(check != 1){
+		$('input').prop('checked', false);
+		$('.ex').hide();
+	}
 	$('#button2').addClass('active');
-	$('#unlucky').hide();
 	$('#button').on("click",function(){
+		$('#data').addClass('active');
 		if(state !=1){
 			btn.removeClass('active');
         			$(this).addClass('active');
@@ -26,27 +34,44 @@ $(function(){
 					}
 				});
 			});
-			$('#unlucky').hide();
+			setTimeout(function(){
+				$('#data').removeClass('active');}, 10);
 			state = 1;
 		}else{
         			$(this).removeClass('active');
 			$('#button2').addClass('active');
 			$('#data tr').show();
-			$('#unlucky').hide();
+			setTimeout(function(){
+				$('#data').removeClass('active');}, 10);
 			state = 0;
+		}
+		if(check != 1){
+			$('.ex').hide();
 		}
 	});
 	$('#button2').on("click",function(){
-		btn.removeClass('active');
-        		$(this).addClass('active');
-		$('#data tr').show();
-		$('#unlucky').hide();
-		state = 0;
+		if(state !=0){
+			$('#data').addClass('active');
+			btn.removeClass('active');
+        			$(this).addClass('active');
+			$('#data tr').show();
+			state = 0;
+			setTimeout(function(){
+				$('#data').removeClass('active');}, 10);
+			if(check != 1){
+				$('.ex').hide();
+			}
+		}
 	});
 	$('#button3').on("click",function(){
+		$('#data').addClass('active');
 		btn.removeClass('active');
-        		$(this).addClass('active');
-		var trRowsL = $('#data tbody tr').length;
+       		$(this).addClass('active');
+		if(check != 1){
+			var trRowsL = $('#data tbody tr').not('.ex').length;
+		}else{
+			var trRowsL = $('#data tbody tr').length;
+		}
 		var RowsR = [...Array(trRowsL).keys()].map(i => ++i);
 		RowsR = shuffle(RowsR);
 		$('#data tbody tr').each(function(){
@@ -57,9 +82,12 @@ $(function(){
 				tr.show();
 			}
 		});
-		state = 0;
+		setTimeout(function(){
+			$('#data').removeClass('active');}, 10);
+		state = 2;
 	});
 	$('#button4').on("click",function(){
+		$('#data').addClass('active');
 		if(state !=4){
 			btn.removeClass('active');
         			$(this).addClass('active');
@@ -70,14 +98,28 @@ $(function(){
 				if(fav_st == 1){
 				$(this).parent().show();}
 			});
-			$('#unlucky').hide();
+			setTimeout(function(){
+				$('#data').removeClass('active');}, 10);
 			state =4;
 		}else{
         			$(this).removeClass('active');
 			$('#button2').addClass('active');
 			$('#data tr').show();
-			$('#unlucky').hide();
+			setTimeout(function(){
+				$('#data').removeClass('active');}, 10);
 			state = 0;
+		}
+		if(check != 1){
+			$('.ex').hide();
+		}
+	});
+	$('.checkmark').on("click",function(){
+		if(check != 1){
+			localStorage.setItem('check_st',1);
+	        	check = 1;
+		}else{
+			localStorage.setItem('check_st',0);
+	        	check = 0;
 		}
 	});
 });
