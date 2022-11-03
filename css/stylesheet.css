@@ -142,7 +142,7 @@ input[type=checkbox] {
   background:rgba(54,146,255,0.6);}
 .cls_toho{
   background:rgba(243,66,111,0.6);}
-.fav, .link, .bpm{
+.fav, .link, .bpm, .time{
   text-align: center;}
 .fav{
   cursor: pointer;
@@ -153,7 +153,7 @@ input[type=checkbox] {
 .fav.active{
   transition: unset;
   color:#f93;}
-.fav, .link, .bpm{
+.fav, .link, .bpm, .time{
   user-select:none;}
 a{
   color:#09f; text-decoration:none;}
